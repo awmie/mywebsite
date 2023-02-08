@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    
+    <script src="https://unpkg.com/split-type"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/354d48ccb6.js" crossorigin="anonymous"></script>
+    <title>Amritava Kole</title>
+  <link rel="stylesheet" href="/assets/index-ae3ed78d.css">
+</head>
+
+<body style="background-color: black;">
+    <header id="home" class="text-gray-600 body-font">
+  <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+    <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+      <img src="/assets/awme-c3f5f6f9.png" alt="" width="40px">
+      <span class="ml-3 text-xl" style="color: white;">awme</span>
+    </a>
+    <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center" style="color:rgb(226, 241, 255);">
+      <a class="mr-5 hover:text-pink-400 cursor-pointer hover:text-xl transition-all ease-in-out" href="#home">Home</a>
+      <a class="mr-5 hover:text-pink-400 cursor-pointer hover:text-xl transition-all ease-in-out" href="#about">About</a>
+      <a class="mr-5 hover:text-pink-400 cursor-pointer hover:text-xl transition-all ease-in-out" href="#resume">Resume</a>
+      <a class="mr-5 hover:text-pink-400 cursor-pointer hover:text-xl transition-all ease-in-out" href="#portfolio">Portfolio</a>
+      <a class="mr-5 hover:text-pink-400 cursor-pointer hover:text-xl transition-all ease-in-out" href="#contact">Contact</a>
+    </nav>
+  </div>
+<!-- header  -->
+</header>
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-center" 
+        style="background-image: url('/assets/universe-6e551643.jpg'); ">
+        <!-- <div class="w-full h-screen bg-no-repeat bg-cover bg-center" 
+        style="background-image: url('bgremove.png');"> -->
+          <section class="text-gray-600 body-font">
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-auto mb-12">
+                  <h1 id='text' class="sm:text-5xl text-4xl font-bold title-font mb-20 my-60 transition-all hover:scale-105 text-gray-900"
+                      style='clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);'>Hello Universe!</h1>
+                  <span id="knownas" class="lg:text-9xl text-7xl font-bold title-font mb-16 transition-all hover:scale-105 text-gray-900"
+                  style='clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);'
+                  >I am Amritava Kole</span>
+                </div>
+              </div>
+            </section>
+        <!-- </div> -->
+    </div>
+    <script>
+      let text = new SplitType('#text');
+      let characters = document.querySelectorAll('.char');
+
+      for(i=0; i<characters.length; i++){
+        characters[i].classList.add('translate-y-32')
+      }
+
+      gsap.to('.char',{
+        y: 0,
+        stagger: 0.05,
+        delay: 0.02,
+        duration: 0.5
+      });
+    </script>
+
+    <div class="flex xl:text-6xl text-4xl w-full text-center justify-center font-bold font-mono title-font mb-4 text-purple-500 transition-all hover:text-pink-400">
+        <h1 id="about">
+            Coffee☕️ → Code{};
+        </h1>
+    </div>
+    <script>
+      let about = new SplitType('#knownas');
+      let coffeeChar = document.querySelectorAll('.char');
+
+      for(j=0; j<coffeeChar.length; j++){
+        coffeeChar[j].classList.add('translate-y-32')
+      }
+      
+      gsap.to('.char',{
+        y: 0,
+        stagger: 0.05,
+        delay: 0.02,
+        duration: 0.5
+      });
+    </script>
+    <section class="text-gray-400 bg-black-900 body-font">
+        <div class="container mx-auto flex px-5 py-24 items-center justify-center flex-col">
+          <img class="lg:w-2/6 md:w-3/6 w-5/6 mb-10 object-cover object-center rounded" alt="hero" src="/assets/awme-c3f5f6f9.png">
+          <div class="text-center lg:w-2/3 w-full">
+            <h1 class="title-font sm:text-5xl text-4xl mb-4 font-medium text-purple-500">Amritava Kole</h1>
+            <p class="leading-relaxed mb-8 text-white text-xl font-mono">I am a third-year computer science student at Gautam Buddha University in Greater Noida. 
+                <br>
+                My current research interests include Machine Learning, Artificial Intelligence, and Python programming.
+            </p>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--                                   EXPERIENCE section   -->
+
+      <section id="resume" class="text-gray-400 bg-black-900 body-font overflow-hidden">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <p class="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">Some of my works ⚙️</p>
+            <div class="flex mt-6 justify-center">
+              <div class="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4">
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden transition-all hover:scale-105 hover:border-indigo-400">
+                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">Programming</h2>
+                <h1 class="text-2xl text-white pb-4 mb-4 border-b border-gray-800 leading-none">Python</h1>
+                <p class="flex items-center text-green-400 mb-2 hover:text-green-200">
+                  <a class="hover:animate-pulse" href="https://www.hackerrank.com/amritavakole" target="_blank">
+                    <i class="fa-brands fa-hackerrank"></i> 
+                    <span class="ml-2"> Hackerrank: Silver level [★★★]</span>
+                  </a>
+                </p>
+                <p class="text-xs text-gray-400 mt-3">These are some of my Programming Experience in Python.</p>
+              </div>
+            </div>
+            <!-- ---- -->
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden transition-all hover:scale-105 hover:border-indigo-400">
+                <!-- <span class="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">POPULAR</span> -->
+                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">Intermediate</h2>
+                <h1 class="text-2xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800">
+                  <span>Machine Learning</span>
+                </h1>
+                <p class="text-xs text-gray-400 mt-3">Nothing to show right now :(</p>
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden transition-all hover:scale-105 hover:border-indigo-400">
+                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">Intermediate</h2>
+                <h1 class="text-2xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800">
+                  <span>Artificial Intelligence</span>
+                </h1>
+                <p class="flex items-center text-blue-500 mb-2 hover:text-blue-300" >
+                  <a class="hover:animate-pulse" href="https://olympus1.mygreatlearning.com/course_certificate/MQZFJMEA" target="_blank">
+                    <i class="fa-sharp fa-solid fa-g"></i>
+                    <span class="ml-2">Cerficate by Great Learning</span>
+                  </a>
+                </p>
+                <p class="text-xs text-gray-400 mt-3">Achievements in AI.</p>
+              </div>
+            </div>
+            <div class="p-4 xl:w-1/4 md:w-1/2 w-full">
+              <div class="h-full p-6 rounded-lg border-2 border-gray-700 flex flex-col relative overflow-hidden transition-all hover:scale-105 hover:border-indigo-400">
+                <h2 class="text-sm tracking-widest text-gray-400 title-font mb-1 font-medium">Personal Project</h2>
+                <h1 class="text-2xl text-white leading-none flex items-center pb-4 mb-4 border-b border-gray-800">
+                  <span>Discord music bot</span>
+                </h1>
+                <p class="flex items-center text-green-500 mb-2 hover:text-green-200" >
+                  <a class="hover:animate-pulse" href="https://github.com/awmie/tishmish.git" target="_blank">
+                    <i class="fa-solid fa-code-branch"></i>
+                    <span class="ml-2">Bot code on Github</span>
+                  </a>
+                </p>
+                <p class="flex items-center text-indigo-500 mb-2 hover:text-indigo-300" >
+                  <a class="hover:animate-pulse" href="https://discord.com/api/oauth2/authorize?client_id=1007653203711639562&permissions=8&scope=bot" target="_blank">
+                    <i class="fa-brands fa-discord"></i>
+                    <span class="ml-2">Discord Bot Link</span>
+                  </a>
+                </p>
+                <p class="text-xs text-gray-400 mt-3">This is one of my Personal Project. If you have a discord server, Enjoy!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--                              PORTFOLIO SECTION                       -->
+      <section id="portfolio" class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Coding Skills 💾</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Some of my Coding skills</p>
+          </div>
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 bg-gray-800 px-4 py-6 rounded-lg transition-all hover:scale-105">
+                <div class="text-9xl">
+                  <i class="fa-brands fa-python"></i>
+                </div>
+                <h2 class="title-font font-medium mt-3 text-xl text-white">Python Programming</h2>
+                <p class="leading-relaxed">Intermediate</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 bg-gray-800 px-4 py-6 rounded-lg transition-all hover:scale-105">
+                <div class="text-9xl">
+                  <i class="fa-brands fa-html5"></i>
+                </div>
+                <h2 class="title-font font-medium mt-3 text-xl text-white">Web Dev</h2>
+                <p class="leading-relaxed">tailwind framework</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/3 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 bg-gray-800 px-4 py-6 rounded-lg transition-all hover:scale-105">
+               <img class="h-32 mx-auto my-auto" src="/assets/c-968de4cd.svg" alt="">
+                <h2 class="title-font font-medium mt-3 text-xl text-white">C++</h2>
+                <p class="leading-relaxed">average</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">My other skills ✍️</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">I'm quite good at video editing 🖥</p>
+          </div>
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 bg-gray-800 px-4 py-6 rounded-lg transition-all hover:scale-105">
+                <img class="mx-auto my-auto h-20" src="data:image/png;base64,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" alt="Pr">
+                <h2 class="title-font font-medium mt-3 text-xl text-white">Adobe Premiere Pro</h2>
+                <p class="leading-relaxed">25+ video edits</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 bg-gray-800 px-4 py-6 rounded-lg transition-all hover:scale-105">
+                <img class="mx-auto my-auto h-20" src="/assets/finalcutpro-6254e35b.png" alt="FCPX">
+                <h2 class="title-font font-medium mt-3 text-xl text-white">Final Cut Pro</h2>
+                <p class="leading-relaxed">30+ video edits</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 bg-gray-800 px-4 py-6 rounded-lg transition-all hover:scale-105">
+               <img class="mx-auto my-auto h-20" src="/assets/adobe-after-effects-cffa7b08.png" alt="Ae">
+                <h2 class="title-font font-medium mt-3 text-xl text-white">Adobe After Effects</h2>
+                <p class="leading-relaxed">20+ videos</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/4 sm:w-1/2 w-full">
+              <div class="border-2 border-gray-800 bg-gray-800 px-4 py-6 rounded-lg transition-all hover:scale-105">
+                <img class="mx-auto my-auto h-20" src="/assets/canva-45f6702e.png" alt="canva">
+                <h2 class="title-font font-medium mt-3 text-xl text-white">Canva Editing</h2>
+                <p class="leading-relaxed">50+ designs</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--                              CONTACT  SECTION               -->
+
+      <section id="contact" class="text-gray-600 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">Any idea 💡 you wanna share?</h1>
+            <div class="flex mt-6 justify-center">
+              <div class="w-20 h-1 rounded-full bg-indigo-500 inline-flex"></div>
+            </div>
+          </div>
+          <div class="flex flex-wrap -m-4 text-center">
+            <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+              <div>
+                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5 flex-shrink-0">
+                  <a href="https://www.google.com/search?q=gautam+buddha+university" target="_blank" class="text-5xl hover:text-6xl transition-all hover:text-white animate-spin">
+                      <i class="fa-solid fa-compass"></i>
+                  </a>
+                </div>
+                <h2 class="title-font font-medium text-1xl text-white">Gautam Buddha University</h2>
+                <p class="leading-relaxed">You can find me here.</p>
+              </div>
+            </div>
+            <div class="p-4 md:w-1/2 sm:w-1/2 w-full">
+              <div>
+                <div class="w-20 h-20 inline-flex items-center justify-center rounded-full bg-gray-800 text-indigo-400 mb-5 flex-shrink-0">
+                  <a href="mailto:amritavakole@gmail.com" target="_blank" class="text-4xl hover:text-5xl transition-all hover:text-white animate-wiggle">
+                    <i class="fa-solid fa-at"></i>
+                  </a>
+                </div>
+                <h2 class="title-font font-medium text-1xl text-white">amritavakole@gmail.com</h2>
+                <p class="leading-relaxed">You can email me about any issue.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+
+<!--                              FOOTER section                       -->
+  <footer class="text-gray-600 body-font">
+    <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+      <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+        <img src="/assets/awme-c3f5f6f9.png" alt="" width="40px">
+        <span class="ml-3 text-xl" style="color: aliceblue;">awme</span>
+      </a>
+      <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© 2023 awme —
+        <a href="https://twitter.com/itsawme" class="text-gray-600 ml-1" rel="noopener noreferrer" target="_blank">@itsawme</a>
+      </p>
+      <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+        <a class="inline-flex ml-3 text-white text-2xl hover:scale-125 transition-all hover:text-indigo-500" href="https://github.com/awmie" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+        <a class="inline-flex ml-3 text-white text-2xl hover:scale-125 transition-all hover:text-indigo-500" href="https://twitter.com/itsawme" target="_blank">
+          <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a class="inline-flex ml-3 text-white text-2xl hover:scale-125 transition-all hover:text-indigo-500" href="https://www.instagram.com/awmeyyyie/" target="_blank">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a class="inline-flex ml-3 text-white text-2xl hover:scale-125 transition-all hover:text-indigo-500" href="https://www.linkedin.com/in/amritava-kole-521bb0229/" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </span>
+    </div>
+  </footer>
+
+  <!-- Back to top button -->
+<button id="to-top-button" onclick="goToTop()"
+  class="hidden fixed z-90 bottom-8 right-8 border-0 w-10 h-10 rounded-full drop-shadow-md bg-indigo-500 text-white text-xl font-bold 
+   transition-all hover:scale-110 hover:text-2xl hover:text-indigo-500 hover:bg-white"
+  >&uarr;</button>
+
+
+<script>
+  var toTopButton = document.getElementById("to-top-button");
+
+  // When the user scrolls down 200px from the top of the document, show the button
+  window.onscroll = function () {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+          toTopButton.classList.remove("hidden");
+      } else {
+          toTopButton.classList.add("hidden");
+      }
+  }
+
+  // When the user clicks on the button, scroll to the top of the document
+  function goToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+</body>
+</html>
